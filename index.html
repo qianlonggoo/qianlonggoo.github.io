@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<!--<link href="style/main.css" rel="stylesheet" type="text/css">-->
+<!--<link href="style/index.css" rel="stylesheet" type="text/css">
+<link href="style/guestbook.css" rel="stylesheet" type="text/css">
+<link href="style/aboutUs.css" rel="stylesheet" type="text/css">
+<link href="style/years.css" rel="stylesheet" type="text/css">
+<link href="style/words.css" rel="stylesheet" type="text/css">
+<link href="style/study.css" rel="stylesheet" type="text/css">-->
+<link href="style/loading.css" rel="stylesheet" type="text/css">
+<script src="js/sea.js"></script>
+<script src="js/date.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+seajs.use('./js/main.js');
+</script>
+</head>
+
+<body>
+<!--   <div id="warm"></div><!--浏览器不支持用于提醒-->
+   <div id="loading"><!--页面加载前的动画-->
+	<div id="load">
+    	<div id="loadIco1"></div>
+        <div id="loadIco2"></div>
+        <div id="loadtext">0%</div>
+    </div>
+    <div id="loadShadow"></div>
+  </div>
+   
+   <div id="header">
+      <div id="logo">
+        <div id="logoImg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+      <ul id="nav">
+          <li><a href="javascript:;" data-hash="index">主&nbsp;页</a></li>
+          <li><a href="javascript:;" data-hash="aboutUs">关于我们</a></li>
+          <li><a href="javascript:;" data-hash="study">学无止尽</a></li>
+          <li><a href="javascript:;" data-hash="words">碎语闲言</a></li>
+          <li><a href="javascript:;" data-hash="years">青葱岁月</a></li>
+          <li><a href="javascript:;" data-hash="message">留言</a></li>
+      </ul>
+   </div>
+
+   <div id="bodyer">
+       <div data-hash="index" id="index">
+             <div id="rotate">
+                <ul id="rotateList">
+                    <li><img src="imgs/3.jpg" alt=""/></li>
+                    <li><img src="imgs/4.jpg" alt=""/></li>
+                    <li><img src="imgs/5.jpg" alt=""/></li>
+                    <li><img src="imgs/6.jpg" alt=""/></li>
+                    <li><img src="imgs/7.jpg" alt=""/></li>
+                </ul>
+                <ol id="btns">
+                   <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ol>
+            </div>  
+            <div id="round">
+               <ul class="roundList">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+           </div>
+           <div id="blur">
+                <ul id="blurList">
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+                <div id="prev" class="btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="next" class="btn">
+                    <span></span>
+                    <span></span>
+                </div>
+           </div>
+      </div>
+       <div data-hash="aboutUs" id="aboutUs">
+                 <div id="showUs" >
+                    <ul class="showUsList">
+                        <li style="background:#C93; opacity:1">
+                             <div class="paper-flip " id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                    这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/3.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                        <li style="background: #699">
+                           <div class="paper-flip" id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                      这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/2.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                        <li style="background: #66C">
+                           <div class="paper-flip" id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                      这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/4.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                        <li style="background: #6FC">
+                           <div class="paper-flip" id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                      这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/5.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                        <li style="background: #603">
+                           <div class="paper-flip" id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                      这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/1.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                        <li style="background: #603">
+                           <div class="paper-flip" id="paper-flip">
+
+                                  <div class="share-layer">
+                                    <div class="btn-wrap">
+                                      这里是显示关于我的介这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍这里是显示关于我的介绍绍
+                                    </div>
+                                    <span class="btn-close">×</span>
+                                  </div>
+                            
+                                  <div class="image-layer" id="image-layer">
+                                    <img src="imgs/3.jpg" alt="">
+                                  </div>
+                                 </div>
+                        </li>
+                    </ul>
+                    <div class="showUsBtn">
+                        <img src="imgs/us/1.png" class="active" />
+                        <img src="imgs/us/1.png" />
+                        <img src="imgs/us/1.png" />
+                        <img src="imgs/us/1.png" />
+                        <img src="imgs/us/1.png" />
+                        <img src="imgs/us/1.png" />
+                    </div>
+               </div>
+               
+       </div>
+       <div data-hash="study"  id="study">
+              <div id="studyArticle">
+                   <div class="side">
+                      <h2>前端文章</h2>
+                      <ul id="articleList">
+                         <li class="test">
+                            <a href="#" class="aLink">
+                                <span class="txt">h5</span>
+                                <img src="imgs/studyImg/01.png" class="img" />
+                                <span class="txt2">
+                                    HTML5
+                                </span>
+                </a>
+                         </li>
+                         
+                         <li class="test">
+                            <a href="#" class="aLink">
+                                <span class="txt">C3</span>
+                                <img src="imgs/studyImg/02.png" class="img" />
+                                <span class="txt2">
+                                    CSS3
+                                </span>
+                </a>
+                         </li>
+                         
+                         <li class="test">
+                            <a href="#" class="aLink">
+                                <span class="txt">JS</span>
+                                <img src="imgs/studyImg/03.png" class="img" />
+                                <span class="txt2">
+                                    JS
+                                </span>
+                </a>
+                         </li>
+                         
+                         <li class="test">
+                            <a href="#" class="aLink">
+                                <span class="txt">JQ</span>
+                                <img src="imgs/studyImg/04.png" class="img" />
+                                <span class="txt2">
+                                    JQ
+                                </span>
+                </a>
+                         </li>
+                         
+                         <li class="test">
+                            <a href="#" class="aLink">
+                                <span class="txt">AJAX</span>
+                                <img src="imgs/studyImg/05.png" class="img" />
+                                <span class="txt2">
+                                    AJAX
+                                </span>
+                </a>
+                         </li>
+                      </ul>
+                   </div>
+               <div class="Article">
+                  <ul class="ArticleBox" id="ArticleBox">
+                    <li>这是html5的内容</li>
+                    <li>这是css3的内容</li>
+                    <li>这是javascript的内容</li>
+                    <li>这是jquery的内容</li>
+                    <li>这是ajax的内容</li>
+                  </ul>
+               </div>
+        </div>   
+       
+       </div>
+       <div data-hash="words" id="words">
+          <div  class="wordsHead">
+             用一小段文字,记录自己的生活
+          </div>
+          <div  class="WordBox" id="WordBox">
+          </div>
+          <div class="WordFooter" id="WordFooter">
+          </div>
+       </div>
+       <div data-hash="years" id="years">
+          <div class="yearWrap clear">
+            <ul id="yearList">
+              <span class="xian"></span>
+              <li>那些岁月1</li>
+              <li>那些岁月2</li>
+              <li>那些岁月3</li>
+              <li>那些岁月4</li>
+              <li>那些岁月5</li>
+              <li>那些岁月6</li>
+            </ul>
+          </div>
+          <div id="picsWrap">
+             <ul id="picsList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+             </ul>
+          </div>
+       </div>
+       <div data-hash="message" id="guestbook" class="clear">
+          <div id="message">
+            <header id="messageHeader">留言回复</header>
+            <ul id="messageList">
+            </ul>
+            <footer id="footer">
+            </footer>
+          </div>
+         <div class="messageIn">
+            <div class="messageInHead">
+               <h2>留言板</h2>
+            </div>
+                <form class="messageInForm">
+                   <table>
+                      <tr><th>姓名</th><td><div class="same"><input type="text" maxlength="20" name="username" placeholder="请输入您的名字" /></div></td></tr>
+                      <tr><th>邮箱</th><td><div class="same"><input type="text" name="username" placeholder="请输入您的邮箱" /></div></td></tr>
+                      <tr><th>内容</th><td ><textarea name="content" placeholder="输入留言内容"></textarea></td></tr>
+                      <tr><th>验证</th><td><div class="same "><input type="text" name="code" class="code" placeholder="输入正确的验证码" /> <img src="imgs/2.jpg" width="75" height="24" alt="" title="" /></div></td></tr>
+                   </table>
+                   <div class="photo">
+                      <img src="imgs/2.jpg" alt="" title="" /><span>点击选择头像</span>
+                   </div>
+                   <div class="send"><input type="button" id="send" value="发表留言"></div>
+                </form>
+         </div> 
+       </div>
+   </div><!--显示的主要内容区域-->
+   <!--<div id="side"></div>--><!--侧边栏用于模仿苹果菜单-->
+   <div id="foot">
+       Design by WangMin
+   </div><!--显示相应的尾部信息-->
+</body>
+</html>

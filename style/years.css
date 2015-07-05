@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+#years {
+	width: 1010px;
+	min-height: 800px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	border-radius:5px;
+	box-shadow:0px 0px 5px 0px #CCCCCC;
+	background:rgba(255,255,255,.7);
+}
+.yearWrap {
+	position: absolute;
+	width: 150px;
+	height:0px;
+	border-radius:5px;
+	background:#89CBB9;
+	box-shadow:0px 0px 5px #CCCCCC;
+	top:60px;
+	left:10px;
+	transition: .9s all ease;
+	-webkit-transition: 0.9s all ease;
+	-moz-transition: 0.9s all ease;
+	-ms-transition: 0.9s all ease;
+	-o-transition: 0.9s all ease;
+	overflow:hidden;
+}
+#yearList {
+	height: 800px;
+	position: absolute;
+	top:30px;
+	padding-top: 10px;
+	padding-left: 20px;
+	left: 10px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	-webkit-transform-origin: left;
+	-moz-transform-origin:left;
+	-ms-transform-origin:left;
+	-o-transform-origin:left;
+}
+
+/*#yearList li:nth-of-type(n){ -webkit-transform: rotateY(-20deg);-moz-transform: rotateY(-20deg);-ms-transform: rotateY(-20deg);-o-transform: rotateY(-20deg);}
+#yearList li:nth-of-type(2n+1){ -webkit-transform: rotateY(20deg);-moz-transform: rotateY(20deg);-ms-transform: rotateY(20deg);-o-transform: rotateY(20deg);}*/
+
+#yearList li:hover{-webkit-transform: rotateY(30deg);-moz-transform: rotateY(30deg);-ms-transform: rotateY(30deg);-o-transform: rotateY(30deg); cursor:pointer; background:#67988B;}
+
+#yearList .xian {
+	display: block;
+	width: 1px;
+	height: 340px;
+	border-left: solid 1px #FFF;
+	z-index: 2;
+	position: absolute;
+	left: 11px;
+	top:-20px;
+}
+#yearList li {
+	width: 100px;
+	height: 30px;
+	background: #BB6582;
+	margin-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 3px;
+	position: relative;
+	transition: .3s all ease;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+}
+#yearList li:after {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	border: solid 1px #FF0033;
+	position: absolute;
+	left: -15px;
+	top: 10px;
+	display: block;
+	content: '';
+}
+#picsWrap {
+	position: absolute;
+	height: auto;
+	background: #fff;
+	right: 0;
+	top: 0;
+}
+#picsList {
+	width: 820px;
+	height: auto;
+}
+#picsList li {
+	width: 197px;
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+#picsList li:nth-of-type(4) {
+	margin-right: 0px;
+}
+#picsList li div {
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 1px #CCCCCC;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#picsList li div img {
+	width: 175px;
+	display: block;
+	border: none;
+}
+#picsList li div p {
+	width: 175px;
+	height: auto;
+	font-size: 12px;
+	text-indent: 2em;
+	overflow: hidden;
+	line-height: 20px;
+}

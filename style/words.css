@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+#words {
+	width: 960px;
+	margin: 0px auto; /*border:solid 1px;*/
+}
+.wordsHead {
+	height: 30px;
+	background: #fff;
+	border-radius: 5px;
+	line-height: 30px;
+	text-indent: 2em;
+	box-shadow: 0 5px 7px rgba(0,0,0,0.2);
+}
+.WordBox {
+	margin: 0px 20px;
+	width: 740px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	-webkit-transform-origin: top;
+	-moz-transform-origin: top;
+	-ms-transform-origin: top;
+	-o-transform-origin: top;
+}
+.wordsList {
+	background: #f8f8f8;
+	box-shadow: 0px 5px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(214, 214, 214, 0.7);
+	width: 740px;
+	border-radius: 5px;
+	position: relative;
+	padding: 20px 0;
+	margin: 10px 0;
+	font-size: 14px;
+	font-family: "宋体";
+	transform: rotateX(80deg);
+	-webkit-transform: rotateX(80deg);
+	-moz-transform: rotateX(80deg);
+	-ms-transform: rotateX(80deg);
+	-o-transform: rotateX(80deg);
+	opacity: 0;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+}
+.wordsList:hover {
+	opacity: 1;
+	-webkit-transform: rotateX(10deg);
+}
+.wordsList p {
+	line-height: 24px;
+	padding: 0 20px 20px;
+}
+.wordsList::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0px 0 20px 22px;
+	border-color: transparent transparent transparent #fff;
+	position: absolute;
+	left: 740px;
+	top: 23px;
+}/* 三角形 */
+.wordsList::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	left: 763px;
+	top: 16px;
+	background: rgba(255,0,102,.7);
+	border: 2px solid #fff;
+	transition: all 0.5s;
+}/* 圆形 */
+.wordsList:hover::before {
+	border-color: transparent transparent transparent #74B9AA
+}/* 三角形 */
+.wordsList:hover::after {
+	border: #fff 2px solid;
+	background: #74B9AA;
+}/* 圆形 */
+.wordsList:hover {
+	background: #f4f2f2;
+	color: #333;
+	text-shadow: #f7f7f7 1px 1px 1px
+}
+.dateView {
+	position: absolute;
+	left: 785px;
+	top: 15px;
+	width: 125px;
+	line-height: 35px;
+	background: #74B9AA;
+	border-radius: 0 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+}
+.WordFooter {
+	height: 30px;
+	background: #fff;
+	box-shadow: 0 5px 7px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+.WordFooter a, .WordFooter p {
+	display: inline-block;
+}
+.WordFooter a {
+	text-decoration: none;
+	background: #d5ccc8;
+	line-height: 22px;
+	padding: 0 10px;
+	color: #555;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	margin: 0 5px;
+	opacity: 1;
+	transition: .5s;
+}
+.WordFooter a:active, .WordFooter .active {
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}

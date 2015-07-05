@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #3E9B89 url(../imgs/body_bg.jpg) no-repeat;
+}
+@-webkit-keyframes move1 {
+ 0% {
+ top:0;
+}
+ 100% {
+ top:8px;
+}
+}
+
+@-moz-keyframes move1 {
+ 0% {
+ top:0;
+}
+ 100% {
+ top:8px;
+}
+}
+@-ms-keyframes move1 {
+ 0% {
+ top:0;
+}
+ 100% {
+ top:8px;
+}
+}
+@-o-keyframes move1 {
+ 0% {
+ top:0;
+}
+ 100% {
+ top:8px;
+}
+}
+@-webkit-keyframes move2 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(-360deg);
+ -moz-transform:rotate(-360deg);
+ -ms-transform:rotate(-360deg);
+ -o-transform:rotate(-360deg);
+}
+}
+@-moz-keyframes move2 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(-360deg);
+ -moz-transform:rotate(-360deg);
+ -ms-transform:rotate(-360deg);
+ -o-transform:rotate(-360deg);
+}
+}
+@-ms-keyframes move2 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(-360deg);
+ -moz-transform:rotate(-360deg);
+ -ms-transform:rotate(-360deg);
+ -o-transform:rotate(-360deg);
+}
+}
+@-o-keyframes move2 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(-360deg);
+ -moz-transform:rotate(-360deg);
+ -ms-transform:rotate(-360deg);
+ -o-transform:rotate(-360deg);
+}
+}
+@-webkit-keyframes move3 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+}
+}
+@-moz-keyframes move3 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+}
+}
+@-ms-keyframes move3 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+}
+}
+@-o-keyframes move3 {
+ 0% {
+ -webkit-transform:rotate(0deg);
+ -moz-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+}
+ 100% {
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+}
+}
+#loading {
+	width: 120px;
+	height: 140px;
+	position: fixed;
+	left: calc(50% - 60px);
+	top: calc(50% - 70px);
+}
+#load {
+	width: 120px;
+	height: 100px;
+	background: url(../imgs/loding/loading3.png) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: .5s move1 infinite alternate linear;
+	-moz-animation: .5s move1 infinite alternate linear;
+	-ms-animation: .5s move1 infinite alternate linear;
+	-o-animation: .5s move1 infinite alternate linear;
+}
+#loadIco1 {
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../imgs/loding/loading4.png) no-repeat;
+	-webkit-animation: 1.2s move2 infinite linear;
+	-moz-animation: 1.2s move2 infinite linear;
+	-ms-animation: 1.2s move2 infinite linear;
+	-o-animation: 1.2s move2 infinite linear;
+}
+#loadIco2 {
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../imgs/loding/loading5.png) no-repeat;
+	-webkit-animation: 1.2s move3 infinite linear;
+	-moz-animation: 1.2s move3 infinite linear;
+	-ms-animation: 1.2s move3 infinite linear;
+	-o-animation: 1.2s move3 infinite linear;
+}
+#loadtext {
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 100px;
+	font: bold 16px/100px Arial;
+	color: #f9725c;
+}
+#loadShadow {
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	background: url(../imgs/loding/loading2.png) no-repeat;
+}

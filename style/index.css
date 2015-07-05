@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+#index {
+	width: 980px;
+	min-height: 760px;
+	
+	box-shadow:0px 0px 4px 4px #6A988B;
+	margin: 0px auto;
+	position: relative;
+}
+#rotate{width:400px;height:150px; position:relative; overflow:hidden; top:150px; left:50px;}
+#rotateList{ width:400px; position:absolute;left:0; top:0; z-index:1;}
+#rotateList li{width:400px; height:150px;}
+#rotateList li img{width:400px;height:150px;}
+#btns{z-index:2; width:120px; position:absolute;right:10px; bottom:10px;}
+#btns li{ width:20px;height:20px; float:left;margin:0 2px; display:inline; background:#fff; color:#f60; line-height:20px; text-align:center; border-radius:50%; cursor:pointer;}
+#btns .active{ background:#f60; color:#fff;}
+
+#round {
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	right: 24px;
+	top: 20px;
+}
+.roundList {
+	width: 150px;
+	height: 150px;
+	background: #C39;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: url(../imgs/beauty/10.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+}
+.roundList li {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #096;
+	border-radius: 50%;
+	transition: 1s linear;
+	-webkit-transition: 1s linear;
+	-moz-transition: 1s linear;
+	-o-transition: 1s linear;
+	-ms-transform-origin: 30px center;
+	transform-origin: 30px center;
+	-webkit-transform-origin: 30px center;
+	-moz-transform-origin: 30px center;
+	-o-transform-origin: 30px center;
+	-ms-transform-origin: 30px center;
+	-webkit-animation: circle 1s  ease-in-out forwards ;
+	-moz-animation: circle 1s  ease-in-out forwards ;
+	-ms-animation: circle 1s  ease-in-out  forwards;
+	-o-animation: circle 1s  ease-in-out forwards ;
+	background-position: center;
+	border:solid 5px rgba(255,255,255,.8);
+}
+.roundList li:nth-of-type(1) {
+	left: -150px;
+	background: url(../imgs/beauty/1.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(2) {
+	left: -100px;
+	top: -120px;
+	width: 70px;
+	height: 70px;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	background: url(../imgs/beauty/2.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(3) {
+	left: -80px;
+	top: 90px;
+	width: 80px;
+	height: 80px;
+		-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	background: url(../imgs/beauty/3.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(4) {
+	left: -15px;
+	top: 230px;
+	width: 70px;
+	height: 70px;
+		-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	-ms-animation-duration: 3s;
+	background: url(../imgs/beauty/4.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(5) {
+	right: -50px;
+	top: 170px;
+	width: 50px;
+	height: 50px;
+		-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-o-animation-duration: 4s;
+	-ms-animation-duration:4s;
+	background: url(../imgs/beauty/5.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(6) {
+	right: -110px;
+	top: 10px;
+	width: 90px;
+	height: 90px;
+		-webkit-animation-duration:5s;
+	-moz-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	background: url(../imgs/beauty/6.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(7) {
+	right: -110px;
+	top: -70px;
+	width: 50px;
+	height: 50px;
+		-webkit-animation-duration: 6s;
+	-moz-animation-duration: 6s;
+	-o-animation-duration:6s;
+	-ms-animation-duration: 6s;
+	background: url(../imgs/beauty/7.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(8) {
+	right: -40px;
+	top: -150px;
+	width: 65px;
+	height: 65px;
+		-webkit-animation-duration: 7s;
+	-moz-animation-duration: 7s;
+	-o-animation-duration: 7s;
+	-ms-animation-duration: 7s;
+	background: url(../imgs/beauty/8.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:nth-of-type(9) {
+	right: -40px;
+	top: 300px;
+	width: 65px;
+	height: 65px;
+		-webkit-animation-duration: 8s;
+	-moz-animation-duration: 8s;
+	-o-animation-duration: 8s;
+	-ms-animation-duration: 8s;
+	background: url(../imgs/beauty/9.jpg) no-repeat;
+	background-size: cover;
+}
+.roundList li:hover {
+	/*-webkit-animation-play-state: paused;
+	width: 100px;
+	height: 100px;*/
+}
+ @-webkit-keyframes circle {
+ from {
+opacity:0;
+-webkit-transform:scale(0);
+}
+to {
+	opacity: 1;
+	-webkit-transform:scale(1);
+}
+}
+
+ @-moz-keyframes circle {
+ from {
+opacity:0;
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+-ms-transform:scale(0);
+-o-transform:scale(0);
+}
+to {
+	opacity: 1;
+	-webkit-transform:scale(1);
+}
+}
+
+
+ @-ms-keyframes circle {
+ from {
+opacity:0;
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+-ms-transform:scale(0);
+-o-transform:scale(0);
+}
+to {
+	opacity: 1;
+	-webkit-transform:scale(1);
+}
+}
+
+ @-o-keyframes circle {
+ from {
+opacity:0;
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+-ms-transform:scale(0);
+-o-transform:scale(0);
+}
+to {
+	opacity: 1;
+	-webkit-transform:scale(1);
+}
+}
+ @-webkit-keyframes show {
+ 0% {
+ opacity:1;
+ -webkit-transform:scale(1);
+}
+ 100% {
+ opacity:.1;
+ -webkit-transform:scale(3);
+}
+}
+#blur {
+	width: 600px;/*border:2px solid #000;*/
+	position: relative;
+	top: 230px;
+	transform: scale(.7);
+	-webkit-transform: scale(.7);
+	-moz-transform: scale(.7);
+	-o-transform: scale(.7);
+	-ms-transform: scale(.7);
+	height: 310px;
+}
+#blurList {
+	position: relative;
+	height: 310px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#blurList li {
+	width: 281px;
+	height: 310px;
+	background: url(../imgs/iWorks_1.png) no-repeat;
+	position: absolute;
+	top: 0;
+	transition: .6s;
+}
+#blurList span {
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: .6s;
+}
+#blurList li:nth-of-type(1) {
+	left: 0;
+	z-index: 1;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	opacity: 0.6;
+}
+#blurList li:nth-of-type(1) span {
+	background: url(../imgs/iWorksBlur_1.png);
+	opacity: 1;
+}
+#blurList li:nth-of-type(2) {
+	left: calc(50% - 140px);
+	background-image: url(../imgs/iWorks_2.png);
+	z-index: 2;
+	opacity: 1;
+}
+#blurList li:nth-of-type(2) span {
+	background: url(../imgs/iWorksBlur_2.png);
+	opacity: 0;
+}
+#blurList li:nth-of-type(3) {
+	left: calc(100% - 281px);
+	background-image: url(../imgs/iWorks_3.png);
+	z-index: 1;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	opacity: 0.6;
+}
+#blurList li:nth-of-type(3) span {
+	background: url(../imgs/iWorksBlur_3.png);
+	opacity: 1;
+}
+.btn {
+	width: 18px;
+	height: 29px;
+	position: absolute;
+	top: 130px;
+	z-index: 10;
+	cursor: pointer;
+}
+.btn span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: inherit;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+.btn:hover span:nth-of-type(1) {
+	-webkit-animation: show 2s infinite;
+	-moz-animation: show 2s infinite;
+	-ms-animation: show 2s infinite;
+	-o-animation: show 2s infinite;
+}
+.btn:hover span:nth-of-type(2) {
+	-webkit-animation: show 2s 1s infinite;
+	-moz-animation: show 2s 1s infinite;
+	-ms-animation: show 2s 1s infinite;
+	-o-animation: show 2s 1s infinite;
+}
+#prev {
+	left: 80px;
+	background: url(../imgs/iWorksPrev.png) no-repeat;
+}
+#next {
+	right: 80px;
+	background: url(../imgs/iWorksNext.png) no-repeat;
+}
